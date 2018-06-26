@@ -1,5 +1,3 @@
-import { history } from "../helpers/history";
-
 const ACCESS_TOKEN = 'ACCESS_TOKEN';
 const REFRESH_TOKEN = 'REFRESH_TOKEN';
 const EXPIRED = 'EXPIRED';

@@ -1,3 +1,3 @@
-import CompanyDetail from './CompanyDetail';
+import CompanyDetailPage from './CompanyDetailPage';
 
-export default CompanyDetail;
+export default CompanyDetailPage;

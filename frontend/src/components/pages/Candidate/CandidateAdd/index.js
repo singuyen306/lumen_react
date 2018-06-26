@@ -1,3 +1,3 @@
-import CandidateAdd from './CandidateAdd';
+import CandidateAddPage from './CandidateAddPage';
 
-export default CandidateAdd;
+export default CandidateAddPage;

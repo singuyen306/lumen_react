@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DefaultLayout } from "./components/containers";
+import DefaultLayout  from "./components/DefaultLayout";
 
 class App extends Component {
 

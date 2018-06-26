@@ -1,3 +1,3 @@
-import JobAdd from './JobAdd';
+import JobAddPage from './JobAddPage';
 
-export default JobAdd;
+export default JobAddPage;

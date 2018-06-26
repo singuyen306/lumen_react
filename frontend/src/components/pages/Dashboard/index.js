@@ -1,5 +1,5 @@
-import Dashboard from './Dashboard';
+import DashboardPage from './DashboardPage';
 
 export {
-    Dashboard
+    DashboardPage
 };

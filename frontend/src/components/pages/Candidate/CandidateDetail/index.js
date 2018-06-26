@@ -1,3 +1,3 @@
-import CandidateDetail from './CandidateDetail';
+import CandidateDetailPage from './CandidateDetailPage';
 
-export default CandidateDetail;
+export default CandidateDetailPage;

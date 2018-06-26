@@ -1,3 +1,3 @@
-import CompanyAdd from './CompanyAdd';
+import CompanyAddPage from './CompanyAddPage';
 
-export default CompanyAdd;
+export default CompanyAddPage;

@@ -1,9 +1,9 @@
-import CandidateList from './CandidateList';
-import CandidateDetail from './CandidateDetail';
-import CandidateAdd from './CandidateAdd';
+import CandidateListPage from './CandidateList';
+import CandidateDetailPage from './CandidateDetail';
+import CandidateAddPage from './CandidateAdd';
 
 export {
-    CandidateList,
-    CandidateDetail,
-    CandidateAdd
+    CandidateListPage,
+    CandidateDetailPage,
+    CandidateAddPage
 };

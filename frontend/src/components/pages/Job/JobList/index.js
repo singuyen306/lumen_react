@@ -1,3 +1,3 @@
-import JobList from './JobList';
+import JobListPage from './JobListPage';
 
-export default JobList;
+export default JobListPage;

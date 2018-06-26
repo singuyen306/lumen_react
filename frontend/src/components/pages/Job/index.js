@@ -1,9 +1,9 @@
-import JobList from './JobList';
-import JobDetail from './JobDetail';
-import JobAdd from './JobAdd';
+import JobListPage from './JobList';
+import JobDetailPage from './JobDetail';
+import JobAddPage from './JobAdd';
 
 export {
-    JobList,
-    JobAdd,
-    JobDetail
+    JobListPage,
+    JobAddPage,
+    JobDetailPage
 };

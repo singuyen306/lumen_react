@@ -1,9 +1,9 @@
-import CompanyList from './CompanyList';
-import CompanyDetail from './CompanyDetail';
-import CompanyAdd from './CompanyAdd';
+import CompanyListPage from './CompanyList';
+import CompanyDetailPage from './CompanyDetail';
+import CompanyAddPage from './CompanyAdd';
 
 export {
-    CompanyDetail,
-    CompanyList,
-    CompanyAdd
+    CompanyDetailPage,
+    CompanyListPage,
+    CompanyAddPage
 };

@@ -1,3 +1,3 @@
-import Permission from './Permission';
+import PermissionListPage from './PermissionListPage';
 
-export default Permission;
+export { PermissionListPage };

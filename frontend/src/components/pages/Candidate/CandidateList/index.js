@@ -1,3 +1,3 @@
-import CandidateList from './CandidateList';
+import CandidateListPage from './CandidateListPage';
 
-export default CandidateList;
+export default CandidateListPage;

@@ -1,25 +1,22 @@
-import App from "../App";
 import {
-    Dashboard,
-    JobList, JobDetail, JobAdd,
-    CandidateList, CandidateDetail, CandidateAdd,
-    CompanyList, CompanyDetail, CompanyAdd,
-    Permission
-} from '../components/pages';
+    JobListContainer, JobDetailContainer, JobAddContainer,
+    CompanyDetailContainer, CompanyListContainer, CompanyAddContainer,
+    CandidateListContainer, CandidateDetailContainer, CandidateAddContainer,
+    DashboardContainer, PermissionListContainer
+} from '../containers';
 
 const routes = [
-    { path: '/', exact: true, name: 'App', component: App },
-    { path: '/dashboard', name: 'Dashboard', component: Dashboard },
-    { path: '/companies', exact: true, name: 'CompanyList', component: CompanyList},
-    { path: '/companies/add', name: 'CompanyAdd', component: CompanyAdd},
-    { path: '/companies/detail/:id', name: 'CompanyDetail', component: CompanyDetail},
-    { path: '/candidates', exact: true, name: 'CandidateList', component: CandidateList},
-    { path: '/candidates/add', name: 'CandidateAdd', component: CandidateAdd},
-    { path: '/candidates/detail/:id', name: 'CandidateDetail', component: CandidateDetail},
-    { path: '/jobs', exact: true, name: 'JobList', component: JobList},
-    { path: '/jobs/add', name: 'JobAdd', component: JobAdd},
-    { path: '/jobs/detail/:id', name: 'JobDetail', component: JobDetail},
-    { path: '/permissions', exact: true, name: 'PermissionList', component: Permission},
+    { path: '/dashboard', name: 'Dashboard', component: DashboardContainer },
+    { path: '/companies', exact: true, name: 'CompanyList', component: CompanyListContainer},
+    { path: '/companies/add', name: 'CompanyAdd', component: CompanyAddContainer},
+    { path: '/companies/detail/:id', name: 'CompanyDetail', component: CompanyDetailContainer},
+    { path: '/candidates', exact: true, name: 'CandidateList', component: CandidateListContainer},
+    { path: '/candidates/add', name: 'CandidateAdd', component: CandidateAddContainer},
+    { path: '/candidates/detail/:id', name: 'CandidateDetail', component: CandidateDetailContainer},
+    { path: '/jobs', exact: true, name: 'JobList', component: JobListContainer},
+    { path: '/jobs/add', name: 'JobAdd', component: JobAddContainer},
+    { path: '/jobs/detail/:id', name: 'JobDetail', component: JobDetailContainer},
+    { path: '/permissions', exact: true, name: 'PermissionList', component: PermissionListContainer},
 ];
 
 export default routes;

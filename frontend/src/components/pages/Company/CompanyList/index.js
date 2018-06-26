@@ -1,3 +1,3 @@
-import CompanyList from './CompanyList';
+import CompanyListPage from './CompanyListPage';
 
-export default CompanyList;
+export default CompanyListPage;
