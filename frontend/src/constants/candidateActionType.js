@@ -1,0 +1,7 @@
+const candidateActionType = {
+    GET_ALL_REQUEST: 'CANDIDATE_GET_ALL_REQUEST',
+    GET_ALL_SUCCESS: 'CANDIDATE_GET_ALL_SUCCESS',
+    GET_ALL_FAILURE: 'CANDIDATE_GET_ALL_FAILURE'
+}
+
+export default candidateActionType;
