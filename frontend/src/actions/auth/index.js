@@ -1,15 +1,14 @@
 import { userActionType } from "../../constants";
-import axios from 'axios';
+import { authService } from '../../services';
 
 export const handleLogin = (data) => {
     return (dispatch) => {
         return (
-            axios.post(`/v1/login`, data)
-                .then( response => {
-                    dispatch(onLogin(response.data))
-                })
-                .catch(function (error) {
-                    console.log(error);
+            authService.loginRequest(data)
+                .then(response => {
+                    dispatch(onLogin(response))
+                }).catch(error => {
+                    console.log(error)
                 })
         );
     }

@@ -1,5 +1,5 @@
 import { userActionType } from "../../constants";
-import { logout as authLogout } from "../../utils/Auth";
+import { logout as authLogout } from "../../helpers/Auth";
 
 //init state
 let initialState = true;

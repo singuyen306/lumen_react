@@ -8,7 +8,6 @@ import { LoginContainer } from "../../containers";
 class DefaultContent extends Component{
 
     showComponentContent = (routes) => {
-        console.log(routes);
         return routes.map((route, index) => (
             <PrivateRoute
                 key={index}

@@ -20,4 +20,12 @@ Route::group(['prefix' => 'v1'], function (){
      * group route for request access token
      */
     Route::post('login', ['uses' => 'AuthController@login']);
+
+
+    /*
+     * group route for request access token
+     */
+    Route::group(['middleware' => 'auth'], function (){
+        Route::get('/list-company', ['uses' => 'CompanyController@index']);
+    });
 });
