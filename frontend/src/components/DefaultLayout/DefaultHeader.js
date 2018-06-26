@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { isLoggedIn, logout, getAccessToken } from "../../helpers/Auth";
+import { isLoggedIn, logout, getAccessToken } from "../../helpers/auth";
 
 class DefaultHeader extends Component{
 

@@ -1,5 +1,5 @@
 import { userActionType } from "../../constants";
-import { isLoggedIn, login as authLogin} from "../../helpers/Auth";
+import { isLoggedIn, login as authLogin} from "../../helpers/auth";
 
 //init state
 let initialState = isLoggedIn() ? true : false;

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getAccessToken } from "../helpers/Auth";
+import { getAccessToken } from "../helpers/auth";
 
 export const BASE_API_URL = (process.env.NODE_ENV !== 'production') ? 'http://toolcv_api.local' : '';
 
