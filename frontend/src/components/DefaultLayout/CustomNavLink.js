@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Route, Link} from "react-router-dom";
 
-const ToolCVLink = ({ label, to, activeOnlyWhenExact, icon }) => (
+const CustomNavLink = ({ label, to, activeOnlyWhenExact, icon }) => (
     <Route
         path={to}
         exact={activeOnlyWhenExact}
@@ -16,4 +16,4 @@ const ToolCVLink = ({ label, to, activeOnlyWhenExact, icon }) => (
     />
 );
 
-export default ToolCVLink;
+export default CustomNavLink;
