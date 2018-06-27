@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { isLoggedIn, logout, getAccessToken } from "../../helpers/auth";
+import { Link } from 'react-router-dom';
+import { logout } from "../../helpers/auth";
 
 class DefaultHeader extends Component{
 
@@ -10,10 +11,10 @@ class DefaultHeader extends Component{
     render(){
         return (
             <header className="main-header">
-                <a href="" className="logo">
-                    <span className="logo-mini"><b>T</b>CV</span>
-                    <span className="logo-lg"><b>Tool</b>CV</span>
-                </a>
+                <Link to="/dashboard" className="logo">
+                    <span className="logo-mini"><b>M</b>RS</span>
+                    <span className="logo-lg"><b>MRS</b>Admin</span>
+                </Link>
                 <nav className="navbar navbar-static-top">
                     <a href="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
                         <span className="sr-only">Toggle navigation</span>
