@@ -1,11 +1,8 @@
 import {axiosConfig as axios } from './axiosConfig';
 
-export const getAllCompany = () => {
+export const getAllCompany = (params) => {
     return (
-        axios.get(`/v1/list-company`)
-            .then( response => {
-                return response.data;
-            })
+        axios.get(`/v1/list-company`, { params })
             .catch(function (error) {
                 console.log(error);
             })

@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
-import {CompanyListPage} from "../../components/pages";
+import { withRouter } from 'react-router-dom';
+import { CompanyListPage } from "../../components/pages";
 import { getAllCompany } from "../../actions/company";
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class CompanyListContainer extends Component{
 
+    componentDidMount(){
+        this.props.getAllCompany();
+    }
+
+    handlePageChange = (page) => {
+        this.props.getAllCompany(page);
+    }
+
     render() {
-        console.log(this.props.listCompany);
         return (
-            <CompanyListPage />
+            <CompanyListPage
+                listCompany={this.props.listCompany.data}
+                handlePageChange={this.handlePageChange}
+            />
         );
     }
 }
@@ -18,10 +29,13 @@ const mapStateToProps = state => {
         listCompany: state.listCompany
     }
 }
+
 const mapDispatchToProps = (dispatch, props) => {
     return {
-        getAllCompany: dispatch(getAllCompany())
+        getAllCompany: (page = 1) => {
+            dispatch(getAllCompany(page))
+        }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CompanyListContainer);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CompanyListContainer));

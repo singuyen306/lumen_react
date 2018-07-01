@@ -6,9 +6,7 @@ export const handleLogin = (data) => {
         return (
             authService.loginRequest(data)
                 .then(response => {
-                    dispatch(onLogin(response))
-                }).catch(error => {
-                    console.log(error)
+                    dispatch(onLogin(response.data))
                 })
         );
     }

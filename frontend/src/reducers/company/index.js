@@ -1,14 +1,9 @@
 import {companyActionType} from "../../constants";
 
-//init state
-let initialState = [];
-
-const listCompany = (state = initialState, action) => {
+const listCompany = (state = [], action) => {
     switch (action.type){
         case companyActionType.GET_ALL_REQUEST:
-            state = action.listCompany;
-
-            return state;
+            return action.listCompany
         default:
             return state;
     }

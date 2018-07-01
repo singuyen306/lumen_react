@@ -24,14 +24,16 @@ class CompanyController extends ApiController
      * request get list company
      * return @access_token
      */
-    public function index(Request $request){
+    public function index(Request $request, $page = 1, $limit = 20){
         try{
-            $company = DB::table('jjob_customers')->limit(3)->get();
+            $company = DB::table('jjob_customers')
+                        ->orderBy('id', 'desc')
+                        ->paginate($limit);
 
             return $this->sendResponseSuccess($company);
 
         }catch (\Exception $e){
-            return $this->sendResponseInternalError();
+            return $this->sendResponseInternalError($e->getMessage());
         }
     }
 }
